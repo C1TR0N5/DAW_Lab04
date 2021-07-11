@@ -11,7 +11,7 @@ del.addEventListener("click", TodoDel);
 function TodoPost(e) {
     e.preventDefault();
     
-    var to_do = document.getElementById("TodoText").value;
+    var to_do = document.getElementById("todoText").value;
     var list = document.getElementById("todoList");
 
     var div = document.createElement("div");
@@ -27,7 +27,7 @@ function TodoPost(e) {
     div.appendChild(label);
     list.appendChild(div);
 
-    document.getElementById("TodoText").value = "";
+    document.getElementById("todoText").value = "";
 }
 
 function TodoClear() {
